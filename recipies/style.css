@@ -83,3 +83,101 @@ a:hover {
     transform: scale(1.03); /* Hover par thora sa bara karna */
 }
 
+
+/* ======================================= */
+/* ----- Homepage Specific Styling ----- */
+/* ======================================= */
+
+/* Homepage ki Main Heading (H1) */
+.home-container h1 {
+    font-size: 4.5em; /* Heading ko bohat bara karna */
+    margin-top: 10px; /* Image aur heading ke darmiyan thora fasla */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Text ke peeche halka sa saya */
+}
+
+/* Homepage ka introduction text */
+.home-container .intro-text {
+    font-size: 1.2em;
+    color: #555; /* Thora halka text color */
+    text-align: center;
+    max-width: 600px; /* Text ko zyada phailne se rokna */
+    margin: 0 auto 40px auto; /* Upar 0, dayein/bayein auto (center), neeche 40px */
+}
+
+/* Homepage ki banner image */
+.home-container .banner-image {
+    width: 100%; /* Image ko container ki poori chaudai mein phailana */
+    height: 300px; /* Image ki height fix karna */
+    object-fit: cover; /* Yeh image ko stretch kiye baghair box mein fit karta hai */
+    border-radius: 12px;
+}
+
+/* Recipe Links ka Grid Layout (Flexbox ka istemal) */
+.recipe-grid ul {
+    display: flex; /* Flexbox layout ko activate karna */
+    justify-content: center; /* Items ko horizontally center karna */
+    flex-wrap: wrap; /* Agar jagah kam ho to items agli line mein aa jayein */
+    gap: 25px; /* Grid items ke darmiyan fasla */
+    padding: 0;
+    list-style-type: none; /* Bullets hatana */
+}
+
+.recipe-grid li {
+    background-color: #ffffff; /* Safed background */
+    border: 1px solid #ddd; /* Halka sa border */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08); /* Halka sa saya */
+    flex-basis: 220px; /* Har item ki bunyadi chaudai (width) */
+    text-align: center; /* Text ko center karna */
+}
+
+.recipe-grid li a {
+    display: block; /* Link ko poora box cover karwana */
+    padding: 40px 20px; /* Link ke andar fasla (taake box bara dikhe) */
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333; /* Text ka color dark grey */
+    transition: background-color 0.3s, color 0.3s; /* Hover par smooth animation */
+}
+
+/* Jab mouse link par aye to styling */
+.recipe-grid li a:hover {
+    background-color: #c7562c; /* Background color badalna */
+    color: #ffffff; /* Text ka color safed karna */
+    text-decoration: none; /* Underline nahi chahiye */
+    border-radius: 10px; /* Isay bhi gol rakhna zaroori hai */
+}
+
+
+/* ======================================= */
+/* ----- Fancy 'Back to Home' Button ----- */
+/* ======================================= */
+
+.back-to-home-link {
+    position: absolute; /* Ise page ke flow se nikal kar kahin bhi rakhne ki ijazat deta hai */
+    top: 20px;          /* Upar se 20 pixel ka fasla */
+    left: 20px;         /* Left se 20 pixel ka fasla */
+    
+    background-color: #c7562c; /* Hamari theme ka orange-brown color */
+    color: #ffffff;            /* Text ka rang safed (white) */
+    
+    padding: 10px 20px;        /* Button ko bara banane ke liye andar se space */
+    border-radius: 50px;       /* Kinaron ko poori tarah gol kar ke 'pill' shape banana */
+    
+    text-decoration: none;     /* Link ki default underline ko hatana */
+    font-weight: bold;
+    font-size: 1em;
+    
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Halka sa saya (3D effect) */
+    
+    /* Animation ko smooth banane ke liye */
+    transition: all 0.3s ease; 
+}
+
+/* Jab mouse button ke upar aye to kya ho */
+.back-to-home-link:hover {
+    background-color: #a64823; /* Background ka rang thora gehra karna */
+    transform: translateY(-3px); /* Button ko thora sa (3px) upar uthana */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Saye ko thora bara aur wazeh karna */
+}

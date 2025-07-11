@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipies</title>
+    <title>Odin Recipes - Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    <h1>Odin Recipies</h1>
-    <div class="recipe-list">
+    <!-- Hum ne container ko ek extra class "home-container" di hai taake ise CSS mein alag se target kar sakein -->
+    <div class="container home-container">
+        
+        <!-- Nayi Banner Image -->
+        <img class="banner-image" src="https://images.pexels.com/photos/3297363/pexels-photo-3297363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A beautiful spread of cooking ingredients">
+        
+        <h1>Odin Recipes</h1>
+        
+        <!-- Naya Introduction Text -->
+        <p class="intro-text">Welcome to Odin Recipes! Yahan aapko behtareen aur asaan tareen recipes milengi. Neeche di gayi recipes mein se apni pasandeeda recipe chunein.</p>
+        
+        <!-- Hum ne recipe list ko ek 'div' mein wrap kiya hai grid layout ke liye -->
+        <div class="recipe-grid">
             <ul>
                 <li><a href="dishes/biryani.html">Biryani Recipe</a></li>
                 <li><a href="dishes/karahi.html">Karahi Recipe</a></li>
-                <li><a href="dishes/pulao.html">Pulao Recipe</a></li>
+                <li><a href="dishes/palao.html">Pulao Recipe</a></li>
             </ul>
         </div>
     </div>
