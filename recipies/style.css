@@ -1,0 +1,85 @@
+/* Google Font Import - Yeh line file ke bilkul shuru mein rakhein */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ----- General Styling ----- */
+body {
+    font-family: 'Lato', sans-serif; /* Poori website ke liye behtar font */
+    background-color: #f5f5f5; /* Halkay grey rang ka background */
+    color: #333; /* Text ka color (dark grey) */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ----- Container jo content ko center mein rakhega ----- */
+.container {
+    max-width: 800px; /* Content ki max chaudai */
+    margin: 0 auto; /* Yeh content ko horizontally center karta hai */
+    background-color: #ffffff; /* Safed background content ke liye */
+    padding: 30px;
+    border-radius: 10px; /* Halka sa gol corner */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Halka sa saya (shadow) */
+}
+
+/* ----- Headings Styling (H1, H2, H3) ----- */
+h1 {
+    color: #c7562c; /* Heading ke liye ek acha sa orange-brown color */
+    text-align: center;
+    font-size: 3em; /* Thora bara size */
+}
+
+h2, h3 {
+    color: #3d3d3d;
+    border-bottom: 2px solid #c7562c; /* Heading ke neeche ek line */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* ----- Image Styling ----- */
+img {
+    max-width: 100%; /* Image ko container se bahar jane se rokta hai */
+    height: auto;
+    display: block; /* Image ko center karne mein madad karta hai */
+    margin: 20px auto; /* Upar-neeche 20px aur dayein-bayein auto (center) */
+    border-radius: 8px; /* Image ke corners ko gol karna */
+}
+
+/* ----- List Styling (Ingredients & Steps) ----- */
+ul, ol {
+    padding-left: 25px; /* List ko thora sa right shift karna */
+}
+
+li {
+    margin-bottom: 10px; /* Har list item ke darmiyan fasla */
+}
+
+/* ----- Links Styling ----- */
+a {
+    color: #c7562c; /* Link ka color heading jaisa */
+    text-decoration: none; /* Neeche wali line (underline) hatana */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Jab mouse link par aye to underline dikhana */
+    color: #e06c3f; /* Hover par thora halka rang */
+}
+
+/* index.html page par recipe list ke liye khas styling */
+.recipe-list ul {
+    list-style-type: none; /* Default bullets hatana */
+    padding: 0;
+}
+
+.recipe-list li {
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.2s; /* Halka sa animation */
+}
+
+.recipe-list li:hover {
+    transform: scale(1.03); /* Hover par thora sa bara karna */
+}
+
