@@ -180,4 +180,5 @@ a:hover {
     background-color: #a64823; /* Background ka rang thora gehra karna */
     transform: translateY(-3px); /* Button ko thora sa (3px) upar uthana */
     box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Saye ko thora bara aur wazeh karna */
+    color: #ffffff;
 }
